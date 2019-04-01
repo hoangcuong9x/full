@@ -7,7 +7,7 @@
 		margin: 0;
 	}
 	.logo-header {
-		height: 100%;
+		/*height: 100%;*/
 		transition: opacity .2s ease;
 		margin-top: 34px;
 		margin-left: 32px;
@@ -281,11 +281,12 @@
 	   color: white;
 	}
     .ip-email input {
-    	padding: 12px 0 12px 12px;
+    	padding: 8px 0 8px 8px;
     	background-color: #999999;
     	border: 1px solid white;
 		-webkit-border-radius: 3px 3px 3px 3px;
 		margin-right: 0;
+		color: white;
     }
     .ip-email {
     	margin-right: 0;
@@ -294,7 +295,7 @@
     #submit {
     	
 	    margin-left: 0;
-	    padding: 12px 12px 12px 12px;
+	    padding: 8px 8px 8px 8px;
 	    -webkit-border-radius: 3px 3px 3px 3px;
     }
 	#fb-tw a {
@@ -407,4 +408,54 @@
 	    text-align: left;
         background-color: #888888;
 
+	}
+	div#input-header {
+	    padding-top: 34px;
+	    padding-right: 47px;
+	}
+	div#input-header a {
+		border-right: 1px solid white;
+		text-decoration: none;
+		padding: 0 10px 0 10px;
+		color: white;
+	}
+	.input-header {
+		padding: 9px 26px 9px 9px;
+		background-color: black;
+		border: 1px solid white;
+		color: white;
+		-webkit-border-radius: 3px 3px 3px 3px;
+	}
+	#input {
+		background-color: black;
+		padding-bottom: 20px;
+		padding-top: 0;
+	}
+	.text-signup {
+		padding: 200px 0;
+		color: white; 
+	    background: url(http://ddvb0xs3ic30t.cloudfront.net/images/app-images/homepage-bg.jpg) no-repeat;
+	    background-size: cover;
+	}
+	.text-signup h1 {
+		font-size: 54px;
+	}
+	.text-signup p {
+		font-size: 20px;
+	}
+	.text-signup a{
+		color: white;
+		text-decoration: none;
+		padding: 17px 25px 16px 25px;
+		background-color: #0033FF;
+		line-height: 73px;
+		-webkit-border-radius: 3px 3px 3px 3px;
+	}
+	#signup-footer {
+		background-color: black;
+		color: white;
+		padding: 25px 0;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
 	}
