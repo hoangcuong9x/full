@@ -10,282 +10,62 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
-      <script>
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <meta name="viewport" content="width=device-width", initial-scale=1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
         $(document).ready(function(){
-          $('#slide-1').bxSlider();
+          $('.slider').bxSlider();
         });
-      </script>
-      <script>
-        $(document).ready(function(){
-          $('#slide-2').bxSlider();
-        });
-      </script>
-    <title>home</title>
+    </script>
+    <title>Home</title>
 </head>
 <body>
-    <div id="header">
-        <header id="div-header">
-            <div id="logo-header">
-				<a href="{{url_for('home')}}"><img class="logo-header" src="https://ddvb0xs3ic30t.cloudfront.net/images/app-logos/logo.png"></a>
-			</div>
-            <div id="nav-header">
-                <nav>
-                    <ul id="ul-header">
-                        <li class="active"><a href="">Home</a></li>
-                        <li><a href="{{url_for('signup')}}">Affiliate Program</a></li>
-                        <li><a href="">App</a>
-                            <ul class="menu-1">
-                                <li><a class="sub-menu" href=""></a>Quick View App</li>
-                                <li><a class="sub-menu" href=""></a>Store Locator App</li>
-                                <li><a class="sub-menu" href=""></a>Promotion Popup App</li>
-                                <li><a class="sub-menu" href=""></a>Currency Switcher App</li>
-                                <li><a class="sub-menu" href=""></a>Store Pickup App</li>
-                                <li><a class="sub-menu" href=""></a>Free Gifts App</li>
-                                <li><a class="sub-menu" href=""></a>Customer Attribute App</li>
-                                <li><a class="sub-menu" href=""></a>Banner Slider App</li>
-                                <li><a class="sub-menu" href=""></a>Product Labels App</li>
-                                <li><a class="sub-menu" href=""></a>Spin To Win App</li>
-                            </ul>
-                        </li>
-                        <li><a href="{{url_for('experts')}}">Experts</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Support</a></li>
-                        <li><a href="">Blog</a>
-                            <ul class="menu-2">
-                                <li><a class="sub-menu" href=""></a>Success Stories</li>
-                                <li><a class="sub-menu" href=""></a>Shopify Tips</li>
-                                <li><a class="sub-menu" href=""></a>Tutorials</li>
-                                <li><a class="sub-menu" href=""></a>News & Updates</li>
-                            </ul>
-                        </li>
-                        <li><a href=""></a></li>
-                    </ul>   
-                </nav> 
-            </div>
-        </header>
-            <div id="intro">
-                <h1>WELCOME TO SECOMAPP!</h1>
-                <p>We build useful shopify apps.</p>
-                <p style="margin-top: 0">Use our apps to INCREASE YOUR SALES.</p>
-                <div class="btn"><a href="">VIEW OUR APPS</a></div>
-            </div>
-            <!-- <canvas class="particles-js-canvas-el" width="1301" height="633" style="width: 100%; height: 20px;"></canvas> -->
-    </div>
-    <div id="slide-wrap" style="background-color: red">
-      <div class="slider" id="slide-1">
-        <div class="slide">
-            <div id="slide-p">
-                <a href="https://apps.shopify.com/freegifts?ref=secomapp"><h1>Free Gifts by Secomapp</h1></a>
-                <p>Free Gifts with specific product</p>
-                <p>Spend $500 get Free Gifts</p>
-                <p>Purchase 3 more products, get Free Gifts</p>
-                <p>Not only Free Gifts, you can set discounts of gift items</p>
-                <a class="detail" href="">More detail</a>
-            </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/rs3DM6EVIIw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+    <header id="vh-hd-home">
+    		<img src="http://vinhomesoceanparkz.vn/wp-content/uploads/2018/10/Logo-white.svg">
+    		<nav>
+    			<ul>
+    				<li><a href="">Trang Chủ</a></li>
+    				<li><a href="">Mặt bằng</a></li>
+    				<li><a href="">Thiết kế căn hộ</a></li>
+    				<li><a href="">Tiện ích</a></li>
+    				<li><a href="">Chính sách bán hàng</a></li>
+    				<li><a href="">Liên hệ</a></li>
+    				<li><a href="">Tin tức</a></li>
+    				<li class="a-phone"><a href=""><i class="fas fa-phone-square"></i> 0123456789</a></li>
+    			</ul>	
+    		</nav>
+    </header> 
+    <div id="vh-p-home">
+        <div class="background-home">
+           <!-- <img src="1.jpeg"> -->
         </div>
-        <div class="slide" id="slide-1">
-            <div id="slide-p">
-                <a href="https://apps.shopify.com/currency-switcher"><h1>Currency Swither by Secomapp</h1></a>
-                <p>Extend your business horizons to other countries</p>
-                <p>Improve shopping experience of your foreign customers with multi-currencies</p>
-                <p>If you sell to markets that use different currencies, then it is important that customers view the correct currency.</p>
-                <p>Easy to Integrate with your theme</p>
-                <a class="detail" href="">More detail</a>
-            </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/rs3DM6EVIIw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="slide" id="slide-1">
-            <div id="slide-p">
-                <a href="https://apps.shopify.com/currency-switcher"><h1>Quick View by Secomapp</h1></a>
-                <p>Instant Product Details preview from a Collection page</p>
-                <p>Fancybox based popup</p>
-                <p>Easy to Integrate with your theme</p>
-                <p>Fully customizable pop-up</p>
-                <p>Fully customizable quickview button</p>
-                <a class="detail" href="">More detail</a>
-            </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/rs3DM6EVIIw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="slide" id="slide-1">
-            <div id="slide-p">
-                <a href="https://apps.shopify.com/currency-switcher"><h1>Promotion Popup by Secomapp</h1></a>
-                <p>Increase conversion rate and convert traffic into sales.</p>
-                <p>Recover Abandoned Carts and drive sales.</p>
-                <p>Put More Money in Your Pocket with Exit Offers, Custom Offers.</p>
-                <a class="detail" href="">More detail</a>
-            </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/rs3DM6EVIIw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="slide" id="slide-1">
-            <div id="slide-p">
-                <a href="https://apps.shopify.com/currency-switcher"><h1>Store Locator by Secomapp</h1></a>
-                <p>Customer can easily find a near store then get instant directions on Google map</p>
-                <p>Create an unlimited number of store locations</p>
-                <p>Google Maps integrated for interactive location display</p>
-                <a class="detail" href="">More detail</a>
-            </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/rs3DM6EVIIw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="slide" id="slide-1">
-            <div id="slide-p">
-                <a href="https://apps.shopify.com/currency-switcher"><h1>Store pickup by Secomapp</h1></a>
-                <p>The app is extremely helpful for online stores with stores located worldwide or just with multiple pickup locations</p>
-                <p>Customers can select nearest stores at appropriate time at cart page</p>
-                <p>Improve the shopping experience on your website</p>
-                <a class="detail" href="">More detail</a>
-            </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/rs3DM6EVIIw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="slide" id="slide-1">
-            <div id="slide-p">
-                <a href="https://apps.shopify.com/currency-switcher"><h1>Product Labels by Secomapp</h1></a>
-                <p>Attract your Customers with exciting label images and call-to-action texts</p>
-                <p>Increase your store traffic and conversion rate</p>
-                <p>Purchase 3 more products, get Free Gifst</p>
-                <p>Highlight 'On sale', 'New' products and special offers</p>
-                <a class="detail" href="">More detail</a>
-            </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/rs3DM6EVIIw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="slide" id="slide-1">
-            <div id="slide-p">
-                <a href="https://apps.shopify.com/currency-switcher"><h1>Banner Slider by Secomapp</h1></a>
-                <p>Free Gifts with specific product</p>
-                <p>Spend $500 get Free Gifts</p>
-                <p>Purchase 3 more products, get Free Gifst</p>
-                <p>Not only Free Gifts, you can set discounts of gift items</p>
-                <a class="detail" href="">More detail</a>
-            </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/rs3DM6EVIIw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-      </div>
-    </div>
-    <div id="contact">
-        <div>
-            <img class="img-contact" src="https://www.secomapp.com/wp-content/uploads/2015/11/tech-image-5.png" alt="">
-        </div>
-        <div class="content-contact">
-            <h1>Need Any Help? Our 5-Star Support Will Help You.</h1>
-            <a href="">CONTACT US</a>
-        </div>
+    	
+        <div id="review-home">
         
-    </div>
-    <div id="slide-2" class="slider">
-        <div class="slide-a">
-            <div class="slide-b">
-                <p>Works as I was hoping and their support team is great, very patient and kind, thank you Louis and Lea! Louis was very quick at solving a problem we experienced with this app (people could add as many free gifts as they wanted to their cart) and he fixed it so quickly! Thank you!!</p>
-                <img src="">
-            </div>
-            <div class="slide-b">
-                <p>Super prompt effective service. Unbelievable actually. We needed something done urgently. I messaged them and they set the app up in no time. Then they offered to set the first urgent promotion up for us because I didn't have any time to learn my way around. 5 star service! Thanks Secomapp!</p>
-                <img src="">
-            </div>
-            <div class="slide-b">
-                <p>This app is great and has helped our online store work very smoothly! And support is also awesome! Nicolas who helped us this time was super quick, patience, kind and very helpful! Thank you so much!</p>
-                <img src="">
-            </div>
+                <h3>TỔNG QUAN DỰ ÁN</h3>
+            
+            <h1>VINHOMES OCEAN PARK</h1>
+            <p style="text-align: left; padding-left: 67px; padding-right: 67px;">Vinhomes Ocean Park Gia Lâm mang tầm vóc một đại đô thị đồng bộ tiện ích như Đảo quốc Singapore. Và hơn thế nữa, dự án sở hữu những đại tiện ích và cảnh quan quy mô tầm cỡ, mới mẻ như: Công viên Gym ngoài trời, công viên BBQ rộng lớn trên nền tảng không gian cây xanh, mặt nước đa dạng.</p>
         </div>
-        <div class="slide-a">
-            <div class="slide-b">
-                <p>Works as I was hoping and their support team is great, very patient and kind, thank you Louis and Lea! Louis was very quick at solving a problem we experienced with this app (people could add as many free gifts as they wanted to their cart) and he fixed it so quickly! Thank you!!</p>
-                <img src="">
-            </div>
-            <div class="slide-b">
-                <p>Super prompt effective service. Unbelievable actually. We needed something done urgently. I messaged them and they set the app up in no time. Then they offered to set the first urgent promotion up for us because I didn't have any time to learn my way around. 5 star service! Thanks Secomapp!</p>
-                <img src="">
-            </div>
-            <div class="slide-b">
-                <p>This app is great and has helped our online store work very smoothly! And support is also awesome! Nicolas who helped us this time was super quick, patience, kind and very helpful! Thank you so much!</p>
-                <img src="">
-            </div>
-        </div>
-        <div class="slide-a">
-            <div class="slide-b">
-                <p>Works as I was hoping and their support team is great, very patient and kind, thank you Louis and Lea! Louis was very quick at solving a problem we experienced with this app (people could add as many free gifts as they wanted to their cart) and he fixed it so quickly! Thank you!!</p>
-                <img src="">
-            </div>
-            <div class="slide-b">
-                <p>Super prompt effective service. Unbelievable actually. We needed something done urgently. I messaged them and they set the app up in no time. Then they offered to set the first urgent promotion up for us because I didn't have any time to learn my way around. 5 star service! Thanks Secomapp!</p>
-                <img src="">
-            </div>
-            <div class="slide-b">
-                <p>This app is great and has helped our online store work very smoothly! And support is also awesome! Nicolas who helped us this time was super quick, patience, kind and very helpful! Thank you so much!</p>
-                <img src="">
-            </div>
-        </div>
+    <div id="review-v-home">
+        <nav class="review-nav">
+            <ul>
+                <li><strong>Tên dự án</strong>: Vinhomes Ocean Park (Gia Lâm)</li>
+                <li><strong>Quy mô dự án</strong>: Khoảng 420 ha </li>
+                <li><strong>Chủ đầu tư</strong>: Công ty TNHH Đầu tư & Phát triển đô thị Gia Lâm.</li>
+                <li><strong>Vị trí dự án</strong>: Khu đất vàng – Nằm giữa quốc lộ 5A và 5B. Nằm trên địa phận xã Đa Tốn – Kiêu Kỵ – Dương Xá và một phần thị trấn Trâu Qùy, Huyện Gia Lâm, TP Hà Nội.</li>
+                <li><strong>Khu cao tầng</strong>: Gồm 4 phân khu: The Park, The Sea, The River, The Lake.</li>
+                <li><strong>Khu thấp tầng</strong>: Gồm 4 phân khu: Ngọc Trai, Sao Biển, San Hô, Hải Âu.</li>
+                <li><strong>Khoảng</strong>: 62 ha công viên và cây xanh | Mật độ tb xây dựng: 19.2 %</li>
+                <li><strong>Loại hình sản phẩm</strong>:  66 tòa chung cư và khoảng hơn 2300 căn biệt thự, liền kề, nhà phố thương mại, trung tâm thương mại và các tiện ích dịch vụ.</li>
+                <li><strong>Biển hồ nước mặn</strong>: 6.1ha | Hồ điều hòa : 24.5ha </li>
+            </ul>
+        </nav>
+        <iframe class="review-nav" width="560" height="315" src="https://www.youtube.com/embed/Wsueon8nH4M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <div id="join-now">
-        <h1 class="content-contact" style="text-align: center">Join our affiliate program</h1>
-        <a href="">JOIN NOW</a>
-    </div>
+    
 
-    <div id="home-footer">
-        <div id="menu-footer">
-            <img src="https://www.secomapp.com/wp-content/uploads/2017/10/logo.png">
-            <p>support@secomapp.com</p>
-            <span class="ip-email"><input type="email" name="email" id="email" class="input-field" required placeholder="Your-Email">
-                <button id="submit" type="submit">submit</button>
-            </span>
-            <div id="fb-tw">
-                <a class="facebook" href="https://www.facebook.com/secomapp"><i class="fab fa-facebook"></i></a>
-                <a class="twitter" href="https://twitter.com/secomapp"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-        <div id="menu-footer">
-            <h2>ABOUT US</h2>
-            <a href="">About</a>
-            <a href="">Support</a>
-            <a href="">FAQs</a>
-            <a href="">Blog</a>
-            <a href="">Shopify.com</a>
-        </div>
-        <div id="menu-footer">
-            <h2>SHOPIFY APPS</h2>
-            <a href="">Currency Switcher App</a>
-            <a href="">Customer Attribute App</a>
-            <a href="">Free Gift App</a>
-            <a href="">Product labels App</a>
-            <a href="">Promotion Popup App</a>
-            <a href="">Banner Slider App</a>
-            <a href="">Quick View App</a>
-            <a href="">Spin To Win App</a>
-            <a href="">Store Locator App</a>
-            <a href="">Store Pickup App</a>
-        </div>
-        <div style="border-right: none" id="menu-footer">
-            <h2>OUR SERVICE</h2>
-            <a href="">Request App Installation</a>
-            <a href="">Request A Feature</a>
-            <a href="">Request An App</a>
-            <a href="">Resources</a>
-            <a href="">Terms & conditions</a>
-            <a href="">Privacy policy</a>
-            <a href="">Affiliate documentation</a>
-        </div>
-
-    </div>
-    <footer id="home-ft">
-        © 2014 Secomapp.com. All Rights Reserved.
-    </footer>
 </body>
 </html>
