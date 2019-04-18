@@ -54,19 +54,19 @@
 	/*review*/
 	@keyframes slide {
 		0% {
-			background-image: url(1.jpeg);
+			background-image: url('http://diaoc-hanoi.com/wp-content/uploads/2018/10/Vinhomes-bbq.jpg');
 		}
 		25% {
-			background-image: url(1.jpeg);
+			background-image: url('https://duanvincity.hanoi.vn/wp-content/uploads/2018/10/phan-khu-the-park.jpeg');
 		}
 		50% {
-			background-image: url(2.jpg);
+			background-image: url('http://vinhomes-hanoi.net/wp-content/uploads/2018/10/section7_img.jpg');
 		}
 		75% {
-			background-image: url(3.jpg);
+			background-image: url('http://diaoc-hanoi.com/wp-content/uploads/2018/10/Vinhomes-bbq.jpg');
 		}
 		100% {
-			background-image: url(4.jpg);
+			background-image: url('http://vinhomes-hanoi.net/wp-content/uploads/2018/10/section7_img.jpg');
 		}
 	
 	}
